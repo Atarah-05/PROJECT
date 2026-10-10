@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="A mixed-genre story library featuring romance, fantasy, mystery, thriller, horror, science fiction, adventure, sports, and more." name="description"/>
+  <title>
+   Once Upon a Page | Storybook Library
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+  <script defer="" src="javas.js">
+  </script>
+ </head>
+ <body>
+  <header class="site-header">
+   <a class="brand" href="#home">
+    <span>
+     ✦
+    </span>
+    Once Upon a Page
+   </a>
+   <button aria-label="Toggle navigation" class="menu-toggle" id="menuToggle">
+    ☰
+   </button>
+   <nav aria-label="Main navigation" class="nav-links" id="navLinks">
+    <a class="active" data-section="home" href="#home">
+     Home
+    </a>
+    <a data-section="stories" href="#stories">
+     Stories
+    </a>
+    <a data-section="about" href="#about">
+     About
+    </a>
+    <button class="theme-toggle" id="themeToggle" type="button">
+     ☾ Dark mode
+    </button>
+   </nav>
+  </header>
+  <main>
+   <section class="hero" id="home">
+    <div class="hero-copy">
+     <p class="eyebrow">
+      YOUR NEXT FAVORITE READ
+     </p>
+     <h1>
+      Every cover opens
+      <br/>
+      <em>
+       a new world.
+      </em>
+     </h1>
+     <p class="hero-description">
+      Step into stories where desire meets danger, secrets run deep, and every choice has a cost.
+     </p>
+     <a class="button button-light" href="#stories">
+      Explore the library
+      <span>
+       &nearrow;
+      </span>
+     </a>
+     <div class="hero-stats">
+      <div>
+       <strong>
+        30
+       </strong>
+       <span>
+        stories to explore
+       </span>
+      </div>
+      <div>
+       <strong>
+        13+
+       </strong>
+       <span>
+        genres and subgenres
+       </span>
+      </div>
+      <div>
+       <strong>
+        &infin;
+       </strong>
+       <span>
+        possibilities
+       </span>
+      </div>
+     </div>
+    </div>
+    <div aria-hidden="true" class="hero-art">
+     <div class="orbit orbit-one">
+     </div>
+     <div class="orbit orbit-two">
+     </div>
+     <div class="hero-book">
+      <span>
+       ✦
+      </span>
+      <small>
+       STORIES TO GET LOST IN
+      </small>
+      <strong>
+       Once Upon
+       <br/>
+       a Page
+      </strong>
+      <i>
+       Open your imagination
+      </i>
+     </div>
+     <b class="sparkle s1">
+      ✧
+     </b>
+     <b class="sparkle s2">
+      ✦
+     </b>
+     <b class="sparkle s3">
+      ✧
+     </b>
+    </div>
+   </section>
+   <section class="section container" id="stories">
+    <div class="section-heading">
+     <div>
+      <p class="eyebrow">
+       THE STORY COLLECTION
+      </p>
+      <h2>
+       Find your next favorite
+      </h2>
+      <p class="muted">
+       Explore romance, fantasy, mystery, thriller, horror, science fiction, adventure, sports, historical fiction, and more. Open any cover to enjoy an original preview or prologue.
+      </p>
+     </div>
+    </div>
+    <div class="library-tools">
+     <label class="search-box">
+      <span>
+       &telrec;
+      </span>
+      <input aria-label="Search stories" id="searchInput" placeholder="Search title, author, or genre..." type="search"/>
+     </label>
+     <select aria-label="Filter by genre" id="genreFilter">
+      <option value="all">
+       All genres
+      </option>
+     </select>
+     <span class="muted" id="resultCount">
+     </span>
+    </div>
+    <p class="dark-romance-note">
+     Content note: Several original stories are rated 18+ and may include violence, coercion, abuse, or explicit themes. Check each original story&rsquo;s warnings before reading.
+    </p>
+    <div class="book-grid" id="allStoriesGrid">
+     <article class="book-card" data-age="18+" data-author="BLuminara" data-author-url="https://www.inkitt.com/stories/1437627" data-chapter="Chapter 1: The Cage" data-content="Original preview: The ballroom glitters beneath chandeliers, but Amara feels trapped in the middle of it. Her black gown sweeps across the marble floor as she watches Sebastian from across the room. Everyone sees a perfect marriage. Amara sees the walls closing in&mdash;and wonders what it would cost to finally walk away." data-emoji="🖤" data-genre="Dark Romance" data-id="101" data-story-url="https://www.inkitt.com/stories/1437627" data-synopsis="Amara Valente lives inside a marriage that looks glamorous from the outside but feels like a gilded cage. Her husband Sebastian holds power over the room&mdash;and over her future. Amara must decide how much of herself she is willing to risk to reclaim her freedom." data-title="Dark Romance">
+      <div class="cover-wrap">
+       <button aria-label="Open Dark Romance" class="cover-art has-image" data-read="101" style="--cover1:#241923;--cover2:#79536a" type="button">
+        <img alt="Atmospheric cover art for Dark Romance" class="real-cover-image" loading="lazy" src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&amp;fit=crop&amp;w=700&amp;q=85"/>
+        <span class="cover-title">
+         Dark Romance
+        </span>
+        <span class="cover-genre">
+         DARK ROMANCE
+        </span>
+        <span class="cover-author">
+         BLuminara
+        </span>
+       </button>
+       <button aria-label="Like Dark Romance" class="like-btn" data-like="101" type="button">
+        ♡
+       </button>
+      </div>
+      <div class="book-info">
+       <h3>
+        Dark Romance
+       </h3>
+       <p class="author">
+        by
+        <a href="https://www.inkitt.com/stories/1437627" rel="noopener noreferrer" target="_blank">
+         BLuminara
+        </a>
+       </p>
+       <span class="genre-pill">
+        Dark Romance &middot; 18+
+       </span>
+       <div class="card-bottom">
+        <button class="read-link" data-read="101" type="button">
+         Read Preview &nearrow;
+        </button>
+        <span class="muted">
+         Ch. 1
+        </span>
+       </div>
+      </div>
+     </article>
+     <article class="book-card" data-age="18+" data-author="Sweet" data-author-url="https://www.inkitt.com/stories/1741687" data-chapter="Chapter 1" data-content="Original preview: Rebecca knows fear by its smallest signs: a tightened jaw, a possessive hand, a phone that never stops tracking her. She once called it passion because that was easier than admitting the truth. Now she is trying to find a way out&mdash;and the darkness ahead may be dangerous in a completely different way." data-emoji="🖤" data-genre="Dark Romance" data-id="102" data-story-url="https://www.inkitt.com/stories/1741687" data-synopsis="Rebecca has mistaken control for love for far too long. When her path crosses Luca Reyes, a feared and ruthless man, she finds herself pulled into a world of danger, secrets, and an intense connection she never expected." data-title="Safe in the Dark">
+      <div class="cover-wrap">
+       <button aria-label="Open Safe in the Dark" class="cover-art has-image" data-read="102" style="--cover1:#101927;--cover2:#3e5368" type="button">
+        <img alt="Atmospheric cover art for Safe in the Dark" class="real-cover-image" loading="lazy" src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&amp;fit=crop&amp;w=700&amp;q=85"/>
+        <span class="cover-title">
+         Safe in the Dark
+        </span>
+        <span class="cover-genre">
+         DARK ROMANCE
+        </span>
+        <span class="cover-author">
+         Sweet
+        </span>
+       </button>
+       <button aria-label="Like Safe in the Dark" class="like-btn" data-like="102" type="button">
+        ♡
+       </button>
+      </div>
+      <div class="book-info">
+       <h3>
+        Safe in the Dark
+       </h3>
+       <p class="author">
+        by
+        <a href="https://www.inkitt.com/stories/1741687" rel="noopener noreferrer" target="_blank">
+         Sweet
+        </a>
+       </p>
+       <span class="genre-pill">
+        Dark Romance &middot; 18+
+       </span>
+       <div class="card-bottom">
+        <button class="read-link" data-read="102" type="button">
+         Read Preview &nearrow;
+        </button>
+        <span class="muted">
+         Ch. 1
+        </span>
+       </div>
+      </div>
+     </article>
+     <article class="book-card" data-age="18+" data-author="Unusualdee" data-author-url="https://www.inkitt.com/stories/1637720" data-chapter="Chapter 1: The Quiet Girl" data-content="Original preview: She thought she was running from her demons. She did not know one of them had learned her name. As the quiet girl tries to leave her past behind, a dangerous new chapter begins&mdash;one where secrets and survival become tangled with the people she should fear most." data-emoji="🖤" data-genre="Dark Romance" data-id="103" data-story-url="https://www.inkitt.com/stories/1637720" data-synopsis="A completed dark mafia romance about a young woman running from her past, only to discover that one of the shadows following her may know her better than she realizes. The story blends danger, suspense, and a dangerous attraction." data-title="His Little Ruin (Completed)">
+      <div class="cover-wrap">
+       <button aria-label="Open His Little Ruin (Completed)" class="cover-art has-image" data-read="103" style="--cover1:#14141c;--cover2:#5b3948" type="button">
+        <img alt="Atmospheric cover art for His Little Ruin (Completed)" class="real-cover-image" loading="lazy" src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&amp;fit=crop&amp;w=700&amp;q=85"/>
+        <span class="cover-title">
+         His Little Ruin (Completed)
+        </span>
+        <span class="cover-genre">
+         DARK ROMANCE
+        </span>
+        <span class="cover-author">
+         Unusualdee
+        </span>
+       </button>
+       <button aria-label="Like His Little Ruin (Completed)" class="like-btn" data-like="103" type="button">
+        ♡
+       </button>
+      </div>
+      <div class="book-info">
+       <h3>
+        His Little Ruin (Completed)
+       </h3>
+       <p class="author">
+        by
+        <a href="https://www.inkitt.com/stories/1637720" rel="noopener noreferrer" target="_blank">
+         Unusualdee
+        </a>
+       </p>
+       <span class="genre-pill">
+        Dark Romance &middot; 18+
+       </span>
+       <div class="card-bottom">
+        <button class="read-link" data-read="103" type="button">
+         Read Preview &nearrow;
+        </button>
+        <span class="muted">
+         Ch. 1
+        </span>
+       </div>
+      </div>
+     </article>
+     <article class="book-card" data-age="18+" data-author="Susubaby" data-author-url="https://www.inkitt.com/stories/1709565" data-chapter="Chapter 1" data-content="Original preview: The bar is dim and smoky, and Jasmine wipes down the counter while trying not to revisit the life she lost. She was once a surgeon with a future ahead of her. Instead, she was arrested on her wedding day and betrayed by the person she trusted most. Tonight, a wounded stranger will change the course of her life." data-emoji="🖤" data-genre="Dark Romance" data-id="104" data-story-url="https://www.inkitt.com/stories/1709565" data-synopsis="Jasmine, once a brilliant surgeon, is betrayed and sent to prison for a crime she did not commit. After her release, she secretly treats people in a dangerous underworld&mdash;and unknowingly saves the life of a powerful mafia boss." data-title="Crime and Love, Steamy Dark Mafia Romance">
+      <div class="cover-wrap">
+       <button aria-label="Open Crime and Love, Steamy Dark Mafia Romance" class="cover-art has-image" data-read="104" style="--cover1:#241413;--cover2:#6f3331" type="button">
+        <img alt="Atmospheric cover art for Crime and Love, Steamy Dark Mafia Romance" class="real-cover-image" loading="lazy" src="https://images.unsplash.com/photo-1518998053901-5348d3961a04?auto=format&amp;fit=crop&amp;w=700&amp;q=85"/>
+        <span class="cover-title">
+         Crime and Love, Steamy Dark Mafia Romance
+        </span>
+        <span class="cover-genre">
+         DARK ROMANCE
+        </span>
+        <span class="cover-author">
+         Susubaby
+        </span>
+       </button>
+       <button aria-label="Like Crime and Love, Steamy Dark Mafia Romance" class="like-btn" data-like="104" type="button">
+        ♡
+       </button>
+      </div>
+      <div class="book-info">
+       <h3>
+        Crime and Love, Steamy Dark Mafia Romance
+       </h3>
+       <p class="author">
+        by
+        <a href="https://www.inkitt.com/stories/1709565" rel="noopener noreferrer" target="_blank">
+         Susubaby
+        </a>
+       </p>
+       <span class="genre-pill">
+        Dark Romance &middot; 18+
+       </span>
+       <div class="card-bottom">
+        <button class="read-link" data-read="104" type="button">
+         Read Preview &nearrow;
+        </button>
+        <span class="muted">
+         Ch. 1
+        </span>
+       </div>
+      </div>
+     </article>
+     <article class="book-card" data-age="18+" data-author="Mia Kerr" data-author-url="https://www.inkitt.com/stories/1110121" data-chapter="Chapter 1" data-content="Original preview: Lola is startled when Rosalie enters her room without knocking. Privacy is rare in a house where everyone is worried about danger and nobody seems willing to trust the people around them. Even in a protected home, Lola knows that the rules are there for a reason&mdash;and that her world is smaller than it should be." data-emoji="🖤" data-genre="Dark Romance" data-id="105" data-story-url="https://www.inkitt.com/stories/1110121" data-synopsis="A short dark mafia romance about Lola, whose carefully guarded life is shaped by family rules, danger, and the powerful people surrounding her. The story explores control, attraction, and the risks of being claimed by someone dangerous." data-title="His To Claim">
+      <div class="cover-wrap">
+       <button aria-label="Open His To Claim" class="cover-art has-image" data-read="105" style="--cover1:#21151a;--cover2:#68434e" type="button">
+        <img alt="Atmospheric cover art for His To Claim" class="real-cover-image" loading="lazy" src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&amp;fit=crop&amp;w=700&amp;q=85"/>
+        <span class="cover-title">
+         His To Claim
+        </span>
+        <span class="cover-genre">
+         DARK ROMANCE
+        </span>
+        <span class="cover-author">
+         Mia Kerr
+        </span>
+       </button>
+       <button aria-label="Like His To Claim" class="like-btn" data-like="105" type="button">
+        ♡
+       </button>
+      </div>
+      <div class="book-info">
+       <h3>
+        His To Claim
+       </h3>
+       <p class="author">
+        by
+        <a href="https://www.inkitt.com/stories/1110121" rel="noopener noreferrer" target="_blank">
+         Mia Kerr
+        </a>
+       </p>
+       <span class="genre-pill">
+        Dark Romance &middot; 18+
+       </span>
+       <div class="card-bottom">
+        <button class="read-link" data-read="105" type="button">
+         Read Preview &nearrow;
+        </button>
+        <span class="muted">
+         Ch. 1
+        </span>
+       </div>
+      </div>
+     </article>
+     <article class="book-card" data-age="18+" data-author="Catherine" data-author-url="https://www.inkitt.com/stories/1442272" data-chapter="Chapter 1: The Stranger in the Dark" data-content="Original preview: The caf&eacute; is empty, and Alessia Moretti stands behind the worn espresso machine. The quiet should be comforting, but the stillness makes every sound feel sharper. Before long, a stranger will bring danger into her ordinary night&mdash;and nothing will feel ordinary again." data-emoji="🖤" data-genre="Dark Romance" data-id="106" data-story-url="https://www.inkitt.com/stories/1442272" data-synopsis="Alessia is drawn into the dangerous world of Dante Valentino, a cold and mysterious man haunted by his past. Their connection is complicated by betrayal, hidden enemies, and secrets surrounding his family." data-title="Mafia&rsquo;s Kiss">
+      <div class="cover-wrap">
+       <button aria-label="Open Mafia&rsquo;s Kiss" class="cover-art has-image" data-read="106" style="--cover1:#11131d;--cover2:#604050" type="button">
+        <img alt="Atmospheric cover art for Mafia&rsquo;s Kiss" class="real-cover-image" loading="lazy" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&amp;fit=crop&amp;w=700&amp;q=85"/>
+        <span class="cover-title">
+         Mafia&rsquo;s Kiss
+        </span>
+        <span class="cover-genre">
+         DARK ROMANCE
+        </span>
+        <span class="cover-author">
+         Catherine
+        </span>
+       </button>
+       <button aria-label="Like Mafia&rsquo;s Kiss" class="like-btn" data-like="106" type="button">
+        ♡
+       </button>
+      </div>
+      <div class="book-info">
+       <h3>
+        Mafia&rsquo;s Kiss
+       </h3>
+       <p class="author">
+        by
+        <a href="https://www.inkitt.com/stories/1442272" rel="noopener noreferrer" target="_blank">
+         Catherine
+        </a>
+       </p>
+       <span class="genre-pill">
+        Dark Romance &middot; 18+
+       </span>
+       <div class="card-bottom">
+        <button class="read-link" data-read="106" type="button">
+         Read Preview &nearrow;
+        </button>
+        <span class="muted">
+         Ch. 1
+        </span>
+       </div>
+      </div>
+     </article>
+     <article class="book-card" data-age="18+" data-author="AishaZand" data-author-url="https://www.inkitt.com/stories/1904350" data-chapter="Chapter 1" data-content="Original preview: By the time Yelena reaches the river, rain has turned the city into black asphalt and reflected light. She keeps her hood low and her umbrella tilted against the wind, focused on finishing the delivery. She does not yet know that one wrong turn will put her face-to-face with a man who never lets go of a mystery." data-emoji="🖤" data-genre="Dark Romance" data-id="107" data-story-url="https://www.inkitt.com/stories/1904350" data-synopsis="Courier Yelena is detained by ruthless crime lord Victor DeVille after a delivery goes wrong. As a wider mafia conspiracy unfolds, their dangerous game of cat-and-mouse begins to blur the line between captor and protector." data-title="The Deville&rsquo;s Captive">
+      <div class="cover-wrap">
+       <button aria-label="Open The Deville&rsquo;s Captive" class="cover-art has-image" data-read="107" style="--cover1:#10131b;--cover2:#3f5365" type="button">
+        <img alt="Atmospheric cover art for The Deville&rsquo;s Captive" class="real-cover-image" loading="lazy" src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&amp;fit=crop&amp;w=700&amp;q=85"/>
+        <span class="cover-title">
+         The Deville&rsquo;s Captive
+        </span>
+        <span class="cover-genre">
+         DARK ROMANCE
+        </span>
+        <span class="cover-author">
+         AishaZand
+        </span>
+       </button>
+       <button aria-label="Like The Deville&rsquo;s Captive" class="like-btn" data-like="107" type="button">
+        ♡
+       </button>
+      </div>
+      <div class="book-info">
+       <h3>
+        The Deville&rsquo;s Captive
+       </h3>
+       <p class="author">
+        by
+        <a href="https://www.inkitt.com/stories/1904350" rel="noopener noreferrer" target="_blank">
+         AishaZand
+        </a>
+       </p>
+       <span class="genre-pill">
+        Dark Romance &middot; 18+
+       </span>
+       <div class="card-bottom">
+        <button class="read-link" data-read="107" type="button">
+         Read Preview &nearrow;
+        </button>
+        <span class="muted">
+         Ch. 1
+        </span>
+       </div>
+      </div>
+     </article>
+     <article class="book-card" data-age="18+" data-author="silent" data-author-url="https://www.inkitt.com/stories/1910662" data-chapter="Chapter 1: Jennifer" data-content="Original preview: The first time Jennifer sees Roger Farid, she stands in his office with a knife in her boot and a lie ready on her tongue. Her sister is missing, and the police have not helped. Roger is the only man with enough power to find her&mdash;but asking him for help may cost more than Jennifer is prepared to pay." data-emoji="🖤" data-genre="Dark Romance" data-id="108" data-story-url="https://www.inkitt.com/stories/1910662" data-synopsis="Layla approaches Boston underworld king Roger Farid because her sister has disappeared. He offers to help&mdash;but demands six months under his roof. Their arrangement exposes old secrets and a dangerous history neither can easily escape." data-title="Six Months a Wife &mdash; A Dark Mafia Romance">
+      <div class="cover-wrap">
+       <button aria-label="Open Six Months a Wife &mdash; A Dark Mafia Romance" class="cover-art has-image" data-read="108" style="--cover1:#19141b;--cover2:#72514a" type="button">
+        <img alt="Atmospheric cover art for Six Months a Wife &mdash; A Dark Mafia Romance" class="real-cover-image" loading="lazy" src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&amp;fit=crop&amp;w=700&amp;q=85"/>
+        <span class="cover-title">
+         Six Months a Wife &mdash; A Dark Mafia Romance
+        </span>
+        <span class="cover-genre">
+         DARK ROMANCE
+        </span>
+        <span class="cover-author">
+         silent
+        </span>
+       </button>
+       <button aria-label="Like Six Months a Wife &mdash; A Dark Mafia Romance" class="like-btn" data-like="108" type="button">
+        ♡
+       </button>
+      </div>
+      <div class="book-info">
+       <h3>
+        Six Months a Wife &mdash; A Dark Mafia Romance
+       </h3>
+       <p class="author">
+        by
+        <a href="https://www.inkitt.com/stories/1910662" rel="noopener noreferrer" target="_blank">
+         silent
+        </a>
+       </p>
+       <span class="genre-pill">
+        Dark Romance &middot; 18+
+       </span>
+       <div class="card-bottom">
+        <button class="read-link" data-read="108" type="button">
+         Read Preview &nearrow;
+        </button>
+        <span class="muted">
+         Ch. 1
+        </span>
+       </div>
+      </div>
+     </article>
+     <article class="book-card" data-age="18+" data-author="Sandra35" data-author-url="https://www.inkitt.com/stories/1743223" data-chapter="Chapter 1: The First Encounter" data-content="Original preview: Amelia hates charity galas, where everyone seems to be pretending. She adjusts the strap of her black dress and prepares to smile, network, and leave early. Then Ethan Hayes enters the room, and the atmosphere changes so completely that she cannot help looking toward the doors." data-emoji="🖤" data-genre="Dark Romance" data-id="109" data-story-url="https://www.inkitt.com/stories/1743223" data-synopsis="Amelia Carter takes a job in the world of powerful Ethan Hayes, believing she can keep her heart safe. Attraction, secrets, and family conflict threaten to turn a forbidden relationship into a dangerous choice." data-title="Love Me Where It Hurts">
+      <div class="cover-wrap">
+       <button aria-label="Open Love Me Where It Hurts" class="cover-art has-image" data-read="109" style="--cover1:#1c151c;--cover2:#6b4556" type="button">
+        <img alt="Atmospheric cover art for Love Me Where It Hurts" class="real-cover-image" loading="lazy" src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&amp;fit=crop&amp;w=700&amp;q=85"/>
+        <span class="cover-title">
+         Love Me Where It Hurts
+        </span>
+        <span class="cover-genre">
+         DARK ROMANCE
+        </span>
+        <span class="cover-author">
+         Sandra35
+        </span>
+       </button>
+       <button aria-label="Like Love Me Where It Hurts" class="like-btn" data-like="109" type="button">
+        ♡
+       </button>
+      </div>
+      <div class="book-info">
+       <h3>
+        Love Me Where It Hurts
+       </h3>
+       <p class="author">
+        by
+        <a href="https://www.inkitt.com/stories/1743223" rel="noopener noreferrer" target="_blank">
+         Sandra35
+        </a>
+       </p>
+       <span class="genre-pill">
+        Dark Romance &middot; 18+
+       </span>
+       <div class="card-bottom">
+        <button class="read-link" data-read="109" type="button">
+         Read Preview &nearrow;
+        </button>
+        <span class="muted">
+         Ch. 1
+        </span>
+       </div>
+      </div>
+     </article>
+     <article class="book-card" data-age="16+" data-author="Luna" data-author-url="https://www.inkitt.com/stories/1566620" data-chapter="Chapter 1: When the Cradle Met Shadows" data-content="Original preview: Luna enters the world beneath a cloud of sorrow. On the day she is born, her family is already grieving, and the silence in the house carries expectations that will shape her future. As she grows, she learns that power and pride can be just as dangerous as any enemy." data-emoji="🖤" data-genre="Dark Romance" data-id="110" data-story-url="https://www.inkitt.com/stories/1566620" data-synopsis="Luna and Kael collide in a world of secrets, missions, and power. Their rivalry is matched by a dangerous attraction, as pride, obsession, and fate threaten to pull them in opposite directions." data-title="Destined in Darkness">
+      <div class="cover-wrap">
+       <button aria-label="Open Destined in Darkness" class="cover-art has-image" data-read="110" style="--cover1:#10151e;--cover2:#46506c" type="button">
+        <img alt="Atmospheric cover art for Destined in Darkness" class="real-cover-image" loading="lazy" src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&amp;fit=crop&amp;w=700&amp;q=85"/>
+        <span class="cover-title">
+         Destined in Darkness
+        </span>
+        <span class="cover-genre">
+         DARK ROMANCE
+        </span>
+        <span class="cover-author">
+         Luna
+        </span>
+       </button>
+       <button aria-label="Like Destined in Darkness" class="like-btn" data-like="110" type="button">
+        ♡
+       </button>
+      </div>
+      <div class="book-info">
+       <h3>
+        Destined in Darkness
+       </h3>
+       <p class="author">
+        by
+        <a href="https://www.inkitt.com/stories/1566620" rel="noopener noreferrer" target="_blank">
+         Luna
+        </a>
+       </p>
+       <span class="genre-pill">
+        Dark Romance &middot; 16+
+       </span>
+       <div class="card-bottom">
+        <button class="read-link" data-read="110" type="button">
+         Read Preview &nearrow;
+        </button>
+        <span class="muted">
+         Ch. 1
+        </span>
+       </div>
+      </div>
+     </article>
+     <article class="book-card" data-age="18+" data-author="Lynn Fair" data-author-url="https://www.inkitt.com/stories/1776083" data-chapter="Chapter 1: Arianna" data-content="The lecture hall was already crowded when Arianna slipped into a seat near the back. She had a notebook, a half-finished coffee, and a plan to keep her head down for the entire semester. Then she noticed Dawson Rhodes staring at her from across the room. He lifted his cup in a tiny, teasing salute. Arianna narrowed her eyes. So much for a quiet first day." data-emoji="🏀" data-genre="Sports Romance" data-id="111" data-story-url="https://www.inkitt.com/stories/1776083" data-synopsis="Arianna is trying to find her place at college when Dawson Rhodes catches her attention in the most irritating way. Between campus life, sports, and growing feelings, she must learn that the right fit is about being accepted as herself." data-title="The Jersey Fit">
+      <div class="cover-wrap">
+       <button aria-label="Open The Jersey Fit" class="cover-art has-image" data-read="111" style="--cover1:#203b55;--cover2:#4b7c8d" type="button">
+        <img alt="Atmospheric cover art for The Jersey Fit" class="real-cover-image" loading="lazy" src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&amp;fit=crop&amp;w=700&amp;q=85"/>
+        <span class="cover-title">
+         The Jersey Fit
+        </span>
+        <span class="cover-genre">
+         SPORTS ROMANCE
+        </span>
+        <span class="cover-author">
+         Lynn Fair
+        </span>
+       </button>
+       <button aria-label="Like The Jersey Fit" class="like-btn" data-like="111" type="button">
+        ♡
+       </button>
+      </div>
+      <div class="book-info">
+       <h3>
+        The Jersey Fit
+       </h3>
+       <p class="author">
+        by
+        <a href="https://www.inkitt.com/stories/1776083" rel="noopener noreferrer" target="_blank">
+         Lynn Fair
+        </a>
+       </p>
+       <span class="genre-pill">
+        Sports Romance &middot; 18+
+       </span>
+       <div class="card-bottom">
+        <button class="read-link" data-read="111" type="button">
+         Read Preview &nearrow;
+        </button>
+        <span class="muted">
+         Preview
+        </span>
+       </div>
+      </div>
+     </article>
+     <article class="book-card" data-age="16+" data-author="Riana" data-author-url="https://www.inkitt.com/stories/1328866" data-chapter="Chapter 1: The Mysterious Tree" data-content="Lily knew every bend in the woodland path, or so she thought. That afternoon, a tree stood where no tree had stood before, its silver-veined bark glowing beneath the leaves. A small door was carved into its trunk. When Lily brushed away the moss, a warm breeze escaped from the darkness beyond it&mdash;and something on the other side whispered her name." data-emoji="🧚" data-genre="Fantasy / Adventure" data-id="112" data-story-url="https://www.inkitt.com/stories/1328866" data-synopsis="A quiet walk through familiar woods leads Lily to an ancient tree hiding a door to a world of magic. With a talking fox and a guardian dragon, she discovers that courage can appear in the strangest places." data-title="Journey Into the Enchanted Realm">
+      <div class="cover-wrap">
+       <button aria-label="Open Journey Into the Enchanted Realm" class="cover-art has-image" data-read="112" style="--cover1:#164d42;--cover2:#9bbd86" type="button">
+        <img alt="Atmospheric cover art for Journey Into the Enchanted Realm" class="real-cover-image" loading="lazy" src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&amp;fit=crop&amp;w=700&amp;q=85"/>
+        <span class="cover-title">
+         Journey Into the Enchanted Realm
+        </span>
+        <span class="cover-genre">
+         FANTASY / ADVENTURE
+        </span>
+        <span class="cover-author">
+         Riana
+        </span>
+       </button>
+       <button aria-label="Like Journey Into the Enchanted Realm" class="like-btn" data-like="112" type="button">
+        ♡
+       </button>
+      </div>
+      <div class="book-info">
+       <h3>
+        Journey Into the Enchanted Realm
+       </h3>
+       <p class="author">
+        by
+        <a href="https://www.inkitt.com/stories/1328866" rel="noopener noreferrer" target="_blank">
+         Riana
+        </a>
+       </p>
+       <span class="genre-pill">
+        Fantasy / Adventure &middot; 16+
+       </span>
+       <div class="card-bottom">
+        <button class="read-link" data-read="112" type="button">
+         Read Preview &nearrow;
+        </button>
+        <span class="muted">
+         Preview
+        </span>
+       </div>
+      </div>
+     </article>
+     <article class="book-card" data-age="13+" data-author="Mizbha" data-author-url="https://www.inkitt.com/stories/1576026" data-chapter="Chapter 1: The Rainy Encounter" data-content="Rain had a way of making Greenheights look innocent. It washed the pavements, blurred the windows, and muffled the conversations behind closed doors. Suhani stood beneath the awning of the corner shop and watched a stranger leave a folded note on the bus-stop bench. Before she could reach it, the stranger turned and looked directly at her." data-emoji="🌧️" data-genre="Mystery / Drama" data-id="113" data-story-url="https://www.inkitt.com/stories/1576026" data-synopsis="In a town where rain seems endless, Suhani notices that every storm brings another rumor. When a stranger appears on a wet street, the town&rsquo;s carefully buried secrets begin to surface." data-title="The Rainy Encounter">
+      <div class="cover-wrap">
+       <button aria-label="Open The Rainy Encounter" class="cover-art has-image" data-read="113" style="--cover1:#263c55;--cover2:#829bb0" type="button">
+        <img alt="Atmospheric cover art for The Rainy Encounter" class="real-cover-image" loading="lazy" src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&amp;fit=crop&amp;w=700&amp;q=85"/>
+        <span class="cover-title">
+         The Rainy Encounter
+        </span>
+        <span class="cover-genre">
+         MYSTERY / DRAMA
+        </span>
+        <span class="cover-author">
+         Mizbha
+        </span>
+       </button>
+       <button aria-label="Like The Rainy Encounter" class="like-btn" data-like="113" type="button">
+        ♡
+       </button>
+      </div>
+      <div class="book-info">
+       <h3>
+        The Rainy Encounter
+       </h3>
+       <p class="author">
+        by
+        <a href="https://www.inkitt.com/stories/1576026" rel="noopener noreferrer" target="_blank">
+         Mizbha
+        </a>
+       </p>
+       <span class="genre-pill">
+        Mystery / Drama &middot; 13+
+       </span>
+       <div class="card-bottom">
+        <button class="read-link" data-read="113" type="button">
+         Read Preview &nearrow;
+        </button>
+        <span class="muted">
+         Preview
+        </span>
+       </div>
+      </div>
+     </article>
+     <article class="book-card" data-age="13+" data-author="Viv" data-author-url="https://www.inkitt.com/stories/241449" data-chapter="Chapter 1" data-content="&ldquo;Amara!&rdquo; The voice came from somewhere behind the trees. She ran harder, branches catching at her sleeves as the forest swallowed the path. Everyone in Wharfs Point knew the old woods were best avoided after dark. Everyone knew people had disappeared there. But tonight, someone was following her&mdash;and they knew her name." data-emoji="🌲" data-genre="Thriller / Mystery" data-id="114" data-story-url="https://www.inkitt.com/stories/241449" data-synopsis="Amara begins investigating the strange history of Wharfs Point, a town that has grown used to death. The deeper she digs, the more the forest seems to connect the missing pieces of her life." data-title="Drowning">
+      <div class="cover-wrap">
+       <button aria-label="Open Drowning" class="cover-art has-image" data-read="114" style="--cover1:#102f34;--cover2:#4b7375" type="button">
+        <img alt="Atmospheric cover art for Drowning" class="real-cover-image" loading="lazy" src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&amp;fit=crop&amp;w=700&amp;q=85"/>
+        <span class="cover-title">
+         Drowning
+        </span>
+        <span class="cover-genre">
+         THRILLER / MYSTERY
+        </span>
+        <span class="cover-author">
+         Viv
+        </span>
+       </button>
+       <button aria-label="Like Drowning" class="like-btn" data-like="114" type="button">
+        ♡
+       </button>
+      </div>
+      <div class="book-info">
+       <h3>
+        Drowning
+       </h3>
+       <p class="author">
+        by
+        <a href="https://www.inkitt.com/stories/241449" rel="noopener noreferrer" target="_blank">
+         Viv
+        </a>
+       </p>
+       <span class="genre-pill">
+        Thriller / Mystery &middot; 13+
+       </span>
+       <div class="card-bottom">
+        <button class="read-link" data-read="114" type="button">
+         Read Preview &nearrow;
+        </button>
+        <span class="muted">
+         Preview
+        </span>
+       </div>
+      </div>
+     </article>
+     <article class="book-card" data-age="13+" data-author="bruhboy109" data-author-url="https://www.inkitt.com/stories/352461" data-chapter="Chapter 1" data-content="The stars were too bright to be real. A flash of yellow light filled the room, and the world disappeared. When the traveler opened their eyes again, the sky stretched endlessly overhead and the ground was cold beneath their hands. A herd of horses emerged from the mist. Their leader stepped close, lowered its head, and waited as if an invitation had been offered." data-emoji="🌙" data-genre="Fantasy" data-id="115" data-story-url="https://www.inkitt.com/stories/352461" data-synopsis="A strange light pulls a sleeper into an empty, storm-lit world. With unfamiliar animals and a mystery waiting beyond the horizon, survival may depend on following a herd that seems to know the way." data-title="Midnight Fantasy">
+      <div class="cover-wrap">
+       <button aria-label="Open Midnight Fantasy" class="cover-art has-image" data-read="115" style="--cover1:#171c3c;--cover2:#5d6597" type="button">
+        <img alt="Atmospheric cover art for Midnight Fantasy" class="real-cover-image" loading="lazy" src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&amp;fit=crop&amp;w=700&amp;q=85"/>
+        <span class="cover-title">
+         Midnight Fantasy
+        </span>
+        <span class="cover-genre">
+         FANTASY
+        </span>
+        <span class="cover-author">
+         bruhboy109
+        </span>
+       </button>
+       <button aria-label="Like Midnight Fantasy" class="like-btn" data-like="115" type="button">
+        ♡
+       </button>
+      </div>
+      <div class="book-info">
+       <h3>
+        Midnight Fantasy
+       </h3>
+       <p class="author">
+        by
+        <a href="https://www.inkitt.com/stories/352461" rel="noopener noreferrer" target="_blank">
+         bruhboy109
+        </a>
+       </p>
+       <span class="genre-pill">
+        Fantasy &middot; 13+
+       </span>
+       <div class="card-bottom">
+        <button class="read-link" data-read="115" type="button">
+         Read Preview &nearrow;
+        </button>
+        <span class="muted">
+         Preview
+        </span>
+       </div>
+      </div>
+     </article>
+     <article class="book-card" data-age="13+" data-author="Dark Loom" data-author-url="https://www.inkitt.com/stories/1480740" data-chapter="Chapter 1: Betrayal" data-content="Rain hammered the palace stones as Leo reached the courtyard too late. The banners were torn, the gates stood open, and the men he had sworn to protect lay silent beneath the storm. A blade flashed. Then came darkness. When he opened his eyes again, the hands in front of him were small, unfamiliar, and trembling. Someone called him son. Somewhere inside, the captain remembered how to fight." data-emoji="⚔️" data-genre="Fantasy / Isekai" data-id="116" data-story-url="https://www.inkitt.com/stories/1480740" data-synopsis="After a deadly betrayal, a royal guard captain awakens as a child in a world ruled by magic. Carrying memories of a warrior&rsquo;s life, he sets out to master sorcery without abandoning the sword." data-title="A Knight in Another World">
+      <div class="cover-wrap">
+       <button aria-label="Open A Knight in Another World" class="cover-art has-image" data-read="116" style="--cover1:#342b48;--cover2:#8b7c9d" type="button">
+        <img alt="Atmospheric cover art for A Knight in Another World" class="real-cover-image" loading="lazy" src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&amp;fit=crop&amp;w=700&amp;q=85"/>
+        <span class="cover-title">
+         A Knight in Another World
+        </span>
+        <span class="cover-genre">
+         FANTASY / ISEKAI
+        </span>
+        <span class="cover-author">
+         Dark Loom
+        </span>
+       </button>
+       <button aria-label="Like A Knight in Another World" class="like-btn" data-like="116" type="button">
+        ♡
+       </button>
+      </div>
+      <div class="book-info">
+       <h3>
+        A Knight in Another World
+       </h3>
+       <p class="author">
+        by
+        <a href="https://www.inkitt.com/stories/1480740" rel="noopener noreferrer" target="_blank">
+         Dark Loom
+        </a>
+       </p>
+       <span class="genre-pill">
+        Fantasy / Isekai &middot; 13+
+       </span>
+       <div class="card-bottom">
+        <button class="read-link" data-read="116" type="button">
+         Read Preview &nearrow;
+        </button>
+        <span class="muted">
+         Preview
+        </span>
+       </div>
+      </div>
+     </article>
+     <article class="book-card" data-age="13+" data-author="Deepali" data-author-url="https://www.inkitt.com/stories/1788040" data-chapter="Chapter 1: The First Message" data-content="Ava&rsquo;s phone buzzed at 7:42 a.m. An unknown number had sent six words: Don&rsquo;t go to college today. She rolled her eyes and set the phone down. A second message appeared before she reached the door. At 8:00, a robbery will happen near your house. Ava checked the time, laughed nervously, and stepped outside. The clock above the bank already read 8:05." data-emoji="📱" data-genre="Thriller / Crime" data-id="117" data-story-url="https://www.inkitt.com/stories/1788040" data-synopsis="Ava receives anonymous messages predicting crimes before they happen. At first she assumes it is a prank, until one warning arrives too late&mdash;and the next one names her." data-title="The First Message">
+      <div class="cover-wrap">
+       <button aria-label="Open The First Message" class="cover-art has-image" data-read="117" style="--cover1:#242c3e;--cover2:#78879a" type="button">
+        <img alt="Atmospheric cover art for The First Message" class="real-cover-image" loading="lazy" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&amp;fit=crop&amp;w=700&amp;q=85"/>
+        <span class="cover-title">
+         The First Message
+        </span>
+        <span class="cover-genre">
+         THRILLER / CRIME
+        </span>
+        <span class="cover-author">
+         Deepali
+        </span>
+       </button>
+       <button aria-label="Like The First Message" class="like-btn" data-like="117" type="button">
+        ♡
+       </button>
+      </div>
+      <div class="book-info">
+       <h3>
+        The First Message
+       </h3>
+       <p class="author">
+        by
+        <a href="https://www.inkitt.com/stories/1788040" rel="noopener noreferrer" target="_blank">
+         Deepali
+        </a>
+       </p>
+       <span class="genre-pill">
+        Thriller / Crime &middot; 13+
+       </span>
+       <div class="card-bottom">
+        <button class="read-link" data-read="117" type="button">
+         Read Preview &nearrow;
+        </button>
+        <span class="muted">
+         Preview
+        </span>
+       </div>
+      </div>
+     </article>
+     <article class="book-card" data-age="13+" data-author="Hanzala" data-author-url="https://www.inkitt.com/stories/1569534" data-chapter="Chapter 1" data-content="The case file had been closed for years, but Ethan still remembered the red letters painted near his father&rsquo;s last crime scene. The sins of the father. He had searched every report, every witness statement, every forgotten photograph. Tonight, a woman in a dark coat slid a name across the table. &ldquo;Alexander Petrov,&rdquo; she whispered. When Ethan looked up, she was already gone." data-emoji="🔎" data-genre="Mystery" data-id="118" data-story-url="https://www.inkitt.com/stories/1569534" data-synopsis="After his detective father is murdered and the case goes cold, Ethan Ryan follows a trail of clues toward a powerful businessman. A guarded woman named Sophia may know the truth&mdash;but she disappears before he can ask why." data-title="The Shadow in the Night">
+      <div class="cover-wrap">
+       <button aria-label="Open The Shadow in the Night" class="cover-art has-image" data-read="118" style="--cover1:#1c2334;--cover2:#606b82" type="button">
+        <img alt="Atmospheric cover art for The Shadow in the Night" class="real-cover-image" loading="lazy" src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&amp;fit=crop&amp;w=700&amp;q=85"/>
+        <span class="cover-title">
+         The Shadow in the Night
+        </span>
+        <span class="cover-genre">
+         MYSTERY
+        </span>
+        <span class="cover-author">
+         Hanzala
+        </span>
+       </button>
+       <button aria-label="Like The Shadow in the Night" class="like-btn" data-like="118" type="button">
+        ♡
+       </button>
+      </div>
+      <div class="book-info">
+       <h3>
+        The Shadow in the Night
+       </h3>
+       <p class="author">
+        by
+        <a href="https://www.inkitt.com/stories/1569534" rel="noopener noreferrer" target="_blank">
+         Hanzala
+        </a>
+       </p>
+       <span class="genre-pill">
+        Mystery &middot; 13+
+       </span>
+       <div class="card-bottom">
+        <button class="read-link" data-read="118" type="button">
+         Read Preview &nearrow;
+        </button>
+        <span class="muted">
+         Preview
+        </span>
+       </div>
+      </div>
+     </article>
+     <article class="book-card" data-age="13+" data-author="Afeez" data-author-url="https://www.inkitt.com/stories/1908678" data-chapter="Chapter 1" data-content="The rejection email arrived before sunrise, though he had stopped counting them years ago. Five years after graduation, every application seemed to disappear into the same automated silence. Then his screen flickered. A new window opened with a message he had never seen before: HUMAN ERROR DETECTED. Below it, his full name appeared beside a countdown." data-emoji="🤖" data-genre="Science Fiction / Dystopian" data-id="119" data-story-url="https://www.inkitt.com/stories/1908678" data-synopsis="In a future where AI dominates hiring, a graduate who has been unemployed for years finds himself on a machine&rsquo;s punishment list. He must uncover who designed the system before it decides his future for him." data-title="Human Error">
+      <div class="cover-wrap">
+       <button aria-label="Open Human Error" class="cover-art has-image" data-read="119" style="--cover1:#1e3d4b;--cover2:#5d9ba4" type="button">
+        <img alt="Atmospheric cover art for Human Error" class="real-cover-image" loading="lazy" src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&amp;fit=crop&amp;w=700&amp;q=85"/>
+        <span class="cover-title">
+         Human Error
+        </span>
+        <span class="cover-genre">
+         SCIENCE FICTION / DYSTOPIAN
+        </span>
+        <span class="cover-author">
+         Afeez
+        </span>
+       </button>
+       <button aria-label="Like Human Error" class="like-btn" data-like="119" type="button">
+        ♡
+       </button>
+      </div>
+      <div class="book-info">
+       <h3>
+        Human Error
+       </h3>
+       <p class="author">
+        by
+        <a href="https://www.inkitt.com/stories/1908678" rel="noopener noreferrer" target="_blank">
+         Afeez
+        </a>
+       </p>
+       <span class="genre-pill">
+        Science Fiction / Dystopian &middot; 13+
+       </span>
+       <div class="card-bottom">
+        <button class="read-link" data-read="119" type="button">
+         Read Preview &nearrow;
+        </button>
+        <span class="muted">
+         Preview
+        </span>
+       </div>
+      </div>
+     </article>
+     <article class="book-card" data-age="13+" data-author="Clever_Little_Elf" data-author-url="https://www.inkitt.com/stories/61493" data-chapter="Prologue" data-content="If only I had opened the letter. That thought followed Gloria through every silent street and every darkened window. The envelope had looked ordinary&mdash;no seal, no return address, only her name written in careful ink. She had tossed it aside. By morning, the first warning sirens were sounding across the city, and the letter was the one thing she wished she had kept." data-emoji="✉️" data-genre="Science Fiction / Mystery" data-id="120" data-story-url="https://www.inkitt.com/stories/61493" data-synopsis="One unopened letter becomes the turning point in Gloria Emir&rsquo;s life. In a future shadowed by an approaching threat, she must face the cost of ignoring a warning that could have saved countless people." data-title="If">
+      <div class="cover-wrap">
+       <button aria-label="Open If" class="cover-art has-image" data-read="120" style="--cover1:#233d56;--cover2:#8ba9bc" type="button">
+        <img alt="Atmospheric cover art for If" class="real-cover-image" loading="lazy" src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&amp;fit=crop&amp;w=700&amp;q=85"/>
+        <span class="cover-title">
+         If
+        </span>
+        <span class="cover-genre">
+         SCIENCE FICTION / MYSTERY
+        </span>
+        <span class="cover-author">
+         Clever_Little_Elf
+        </span>
+       </button>
+       <button aria-label="Like If" class="like-btn" data-like="120" type="button">
+        ♡
+       </button>
+      </div>
+      <div class="book-info">
+       <h3>
+        If
+       </h3>
+       <p class="author">
+        by
+        <a href="https://www.inkitt.com/stories/61493" rel="noopener noreferrer" target="_blank">
+         Clever_Little_Elf
+        </a>
+       </p>
+       <span class="genre-pill">
+        Science Fiction / Mystery &middot; 13+
+       </span>
+       <div class="card-bottom">
+        <button class="read-link" data-read="120" type="button">
+         Read Preview &nearrow;
+        </button>
+        <span class="muted">
+         Preview
+        </span>
+       </div>
+      </div>
+     </article>
+     <article class="book-card" data-age="16+" data-author="SXG" data-author-url="https://www.inkitt.com/stories/1872118" data-chapter="Prologue: 2078" data-content="In 2078, the skyline glowed with advertisements that knew your name before you spoke. Machines delivered meals, guarded homes, and predicted what people would want tomorrow. The city called it a perfect age. But behind a locked door, seven strangers gathered around a map of a building no one had ever entered. Their plan was simple: steal the one thing the future could not replace." data-emoji="🚀" data-genre="Science Fiction / Heist" data-id="121" data-story-url="https://www.inkitt.com/stories/1872118" data-synopsis="By 2078, technology can do almost anything and information is more valuable than ever. A team of seven prepares a heist that should be impossible, forcing the world to question what progress has cost humanity." data-title="The Era of Z">
+      <div class="cover-wrap">
+       <button aria-label="Open The Era of Z" class="cover-art has-image" data-read="121" style="--cover1:#172c43;--cover2:#477c9b" type="button">
+        <img alt="Atmospheric cover art for The Era of Z" class="real-cover-image" loading="lazy" src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&amp;fit=crop&amp;w=700&amp;q=85"/>
+        <span class="cover-title">
+         The Era of Z
+        </span>
+        <span class="cover-genre">
+         SCIENCE FICTION / HEIST
+        </span>
+        <span class="cover-author">
+         SXG
+        </span>
+       </button>
+       <button aria-label="Like The Era of Z" class="like-btn" data-like="121" type="button">
+        ♡
+       </button>
+      </div>
+      <div class="book-info">
+       <h3>
+        The Era of Z
+       </h3>
+       <p class="author">
+        by
+        <a href="https://www.inkitt.com/stories/1872118" rel="noopener noreferrer" target="_blank">
+         SXG
+        </a>
+       </p>
+       <span class="genre-pill">
+        Science Fiction / Heist &middot; 16+
+       </span>
+       <div class="card-bottom">
+        <button class="read-link" data-read="121" type="button">
+         Read Preview &nearrow;
+        </button>
+        <span class="muted">
+         Preview
+        </span>
+       </div>
+      </div>
+     </article>
+     <article class="book-card" data-age="13+" data-author="Story" data-author-url="https://www.inkitt.com/stories/1145437" data-chapter="Chapter 1" data-content="Emily turned the book over in her hands, searching for a genre label that wasn&rsquo;t there. The cover was plain, the pages cold, and the title seemed to shift whenever she looked away. She carried it downstairs to ask Penny, the head librarian, for help. The lower floor was empty. Then a shelf moved by itself, revealing a narrow staircase descending beneath the building." data-emoji="👻" data-genre="Horror / Supernatural" data-id="122" data-story-url="https://www.inkitt.com/stories/1145437" data-synopsis="A teenager named Emily discovers a hidden library beneath the Earth. Its strange residents have waited a long time for a visitor&mdash;and they may not want her to leave." data-title="The Haunting">
+      <div class="cover-wrap">
+       <button aria-label="Open The Haunting" class="cover-art has-image" data-read="122" style="--cover1:#20202b;--cover2:#6e6b83" type="button">
+        <img alt="Atmospheric cover art for The Haunting" class="real-cover-image" loading="lazy" src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&amp;fit=crop&amp;w=700&amp;q=85"/>
+        <span class="cover-title">
+         The Haunting
+        </span>
+        <span class="cover-genre">
+         HORROR / SUPERNATURAL
+        </span>
+        <span class="cover-author">
+         Story
+        </span>
+       </button>
+       <button aria-label="Like The Haunting" class="like-btn" data-like="122" type="button">
+        ♡
+       </button>
+      </div>
+      <div class="book-info">
+       <h3>
+        The Haunting
+       </h3>
+       <p class="author">
+        by
+        <a href="https://www.inkitt.com/stories/1145437" rel="noopener noreferrer" target="_blank">
+         Story
+        </a>
+       </p>
+       <span class="genre-pill">
+        Horror / Supernatural &middot; 13+
+       </span>
+       <div class="card-bottom">
+        <button class="read-link" data-read="122" type="button">
+         Read Preview &nearrow;
+        </button>
+        <span class="muted">
+         Preview
+        </span>
+       </div>
+      </div>
+     </article>
+     <article class="book-card" data-age="16+" data-author="Jesse Harvey" data-author-url="https://www.inkitt.com/stories/1846990" data-chapter="The Eye That Watches" data-content="&ldquo;Don&rsquo;t look at it.&rdquo; The warning appeared beneath a breaking-news report, but most viewers thought it was a joke. A week later, every mirror in town was covered with sheets. Nobody wanted to admit what they had seen in the glass: a shape standing just behind them, waiting for them to turn around." data-emoji="🕯️" data-genre="Horror" data-id="123" data-story-url="https://www.inkitt.com/stories/1846990" data-synopsis="A collection of compact horror tales begins with a warning about mirrors. At first, the reports sound like an urban legend&mdash;until people who see the thing reflected begin to vanish." data-title="Short Horror Stories">
+      <div class="cover-wrap">
+       <button aria-label="Open Short Horror Stories" class="cover-art has-image" data-read="123" style="--cover1:#251f29;--cover2:#725c69" type="button">
+        <img alt="Atmospheric cover art for Short Horror Stories" class="real-cover-image" loading="lazy" src="https://images.unsplash.com/photo-1509248961158-e54f6934749c?auto=format&amp;fit=crop&amp;w=700&amp;q=85"/>
+        <span class="cover-title">
+         Short Horror Stories
+        </span>
+        <span class="cover-genre">
+         HORROR
+        </span>
+        <span class="cover-author">
+         Jesse Harvey
+        </span>
+       </button>
+       <button aria-label="Like Short Horror Stories" class="like-btn" data-like="123" type="button">
+        ♡
+       </button>
+      </div>
+      <div class="book-info">
+       <h3>
+        Short Horror Stories
+       </h3>
+       <p class="author">
+        by
+        <a href="https://www.inkitt.com/stories/1846990" rel="noopener noreferrer" target="_blank">
+         Jesse Harvey
+        </a>
+       </p>
+       <span class="genre-pill">
+        Horror &middot; 16+
+       </span>
+       <div class="card-bottom">
+        <button class="read-link" data-read="123" type="button">
+         Read Preview &nearrow;
+        </button>
+        <span class="muted">
+         Preview
+        </span>
+       </div>
+      </div>
+     </article>
+     <article class="book-card" data-age="16+" data-author="A.DUTTA♡" data-author-url="https://www.inkitt.com/stories/1582349" data-chapter="Part I: The Chemical Silence" data-content="The bus rolled past the last streetlight and stopped beside a rusted fence. Liam joked about the smell, but the others had gone quiet. Beyond the fence stood the old factory, its windows black and its warning signs half buried in weeds. Then a scream echoed from the trees. The group turned toward the sound&mdash;and counted heads twice, because one of their friends was already missing." data-emoji="☣️" data-genre="Horror / Apocalypse" data-id="124" data-story-url="https://www.inkitt.com/stories/1582349" data-synopsis="A college excursion near an abandoned chemical factory turns into a nightmare when students disappear and the survivors return changed. Something in the dark has awakened, and it is no longer human." data-title="The Abandoned Test">
+      <div class="cover-wrap">
+       <button aria-label="Open The Abandoned Test" class="cover-art has-image" data-read="124" style="--cover1:#2b3127;--cover2:#79815b" type="button">
+        <img alt="Atmospheric cover art for The Abandoned Test" class="real-cover-image" loading="lazy" src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&amp;fit=crop&amp;w=700&amp;q=85"/>
+        <span class="cover-title">
+         The Abandoned Test
+        </span>
+        <span class="cover-genre">
+         HORROR / APOCALYPSE
+        </span>
+        <span class="cover-author">
+         A.DUTTA♡
+        </span>
+       </button>
+       <button aria-label="Like The Abandoned Test" class="like-btn" data-like="124" type="button">
+        ♡
+       </button>
+      </div>
+      <div class="book-info">
+       <h3>
+        The Abandoned Test
+       </h3>
+       <p class="author">
+        by
+        <a href="https://www.inkitt.com/stories/1582349" rel="noopener noreferrer" target="_blank">
+         A.DUTTA♡
+        </a>
+       </p>
+       <span class="genre-pill">
+        Horror / Apocalypse &middot; 16+
+       </span>
+       <div class="card-bottom">
+        <button class="read-link" data-read="124" type="button">
+         Read Preview &nearrow;
+        </button>
+        <span class="muted">
+         Preview
+        </span>
+       </div>
+      </div>
+     </article>
+     <article class="book-card" data-age="16+" data-author="KimberlyTanithMarie" data-author-url="https://www.inkitt.com/stories/1140679" data-chapter="Chapter 1" data-content="Serena woke to the sound of carriage wheels and voices speaking in a rhythm she knew only from old films. Her modern clothes were gone, replaced by a dress with too many fastenings. A servant called her &ldquo;my lady&rdquo; and warned her not to speak of the future. Outside the window, a city from a history book stretched beneath the morning sun." data-emoji="🏰" data-genre="Historical Romance / Time Travel" data-id="125" data-story-url="https://www.inkitt.com/stories/1140679" data-synopsis="A modern woman finds herself navigating Renaissance Europe, where her hidden identity becomes both a shield and a danger. As she searches for a way home, her growing feelings for a marquis complicate every plan." data-title="From Crime to Court">
+      <div class="cover-wrap">
+       <button aria-label="Open From Crime to Court" class="cover-art has-image" data-read="125" style="--cover1:#5a3e37;--cover2:#c6a58a" type="button">
+        <img alt="Atmospheric cover art for From Crime to Court" class="real-cover-image" loading="lazy" src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&amp;fit=crop&amp;w=700&amp;q=85"/>
+        <span class="cover-title">
+         From Crime to Court
+        </span>
+        <span class="cover-genre">
+         HISTORICAL ROMANCE / TIME TRAVEL
+        </span>
+        <span class="cover-author">
+         KimberlyTanithMarie
+        </span>
+       </button>
+       <button aria-label="Like From Crime to Court" class="like-btn" data-like="125" type="button">
+        ♡
+       </button>
+      </div>
+      <div class="book-info">
+       <h3>
+        From Crime to Court
+       </h3>
+       <p class="author">
+        by
+        <a href="https://www.inkitt.com/stories/1140679" rel="noopener noreferrer" target="_blank">
+         KimberlyTanithMarie
+        </a>
+       </p>
+       <span class="genre-pill">
+        Historical Romance / Time Travel &middot; 16+
+       </span>
+       <div class="card-bottom">
+        <button class="read-link" data-read="125" type="button">
+         Read Preview &nearrow;
+        </button>
+        <span class="muted">
+         Preview
+        </span>
+       </div>
+      </div>
+     </article>
+     <article class="book-card" data-age="16+" data-author="DILAN A. Y." data-author-url="https://www.inkitt.com/stories/1813138" data-chapter="Chapter 1" data-content="The desert road shimmered in the afternoon heat, and Lola&rsquo;s car chose that exact moment to give up. She was still deciding whether to laugh or cry when a black car pulled onto the shoulder. The driver stepped out wearing a suit that looked far too expensive for roadside trouble. He glanced at her smoking engine, then at the wedding ring he had just slipped into his pocket." data-emoji="🚗" data-genre="Romance / Road Trip" data-id="126" data-story-url="https://www.inkitt.com/stories/1813138" data-synopsis="Tyler is escaping his own wedding, while Lola is leaving a relationship that has become unbearable. When her car breaks down in the desert, the runaway groom who stops to help may change both their plans." data-title="Roadside Trouble">
+      <div class="cover-wrap">
+       <button aria-label="Open Roadside Trouble" class="cover-art has-image" data-read="126" style="--cover1:#37506b;--cover2:#b28d6e" type="button">
+        <img alt="Atmospheric cover art for Roadside Trouble" class="real-cover-image" loading="lazy" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&amp;fit=crop&amp;w=700&amp;q=85"/>
+        <span class="cover-title">
+         Roadside Trouble
+        </span>
+        <span class="cover-genre">
+         ROMANCE / ROAD TRIP
+        </span>
+        <span class="cover-author">
+         DILAN A. Y.
+        </span>
+       </button>
+       <button aria-label="Like Roadside Trouble" class="like-btn" data-like="126" type="button">
+        ♡
+       </button>
+      </div>
+      <div class="book-info">
+       <h3>
+        Roadside Trouble
+       </h3>
+       <p class="author">
+        by
+        <a href="https://www.inkitt.com/stories/1813138" rel="noopener noreferrer" target="_blank">
+         DILAN A. Y.
+        </a>
+       </p>
+       <span class="genre-pill">
+        Romance / Road Trip &middot; 16+
+       </span>
+       <div class="card-bottom">
+        <button class="read-link" data-read="126" type="button">
+         Read Preview &nearrow;
+        </button>
+        <span class="muted">
+         Preview
+        </span>
+       </div>
+      </div>
+     </article>
+     <article class="book-card" data-age="13+" data-author="Maria" data-author-url="https://www.inkitt.com/stories/1845238" data-chapter="Chapter 1: The First Time I Saw Him" data-content="Some love stories begin with a confession. Mine began on an ordinary school morning, when the corridor was crowded and everyone was rushing to class. I noticed him near the classroom door, laughing with friends as if the world had never disappointed him. I didn&rsquo;t know his name yet. I only knew that, years later, I would remember that morning more clearly than many things that mattered more." data-emoji="📖" data-genre="Romance / Coming of Age" data-id="127" data-story-url="https://www.inkitt.com/stories/1845238" data-synopsis="A quiet, heartfelt story about the person who becomes important without ever knowing it. Years later, the narrator looks back at an almost-love and the small moments that shaped a chapter of her life." data-title="The Chapter You Never Read">
+      <div class="cover-wrap">
+       <button aria-label="Open The Chapter You Never Read" class="cover-art has-image" data-read="127" style="--cover1:#63485b;--cover2:#c69fb1" type="button">
+        <img alt="Atmospheric cover art for The Chapter You Never Read" class="real-cover-image" loading="lazy" src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&amp;fit=crop&amp;w=700&amp;q=85"/>
+        <span class="cover-title">
+         The Chapter You Never Read
+        </span>
+        <span class="cover-genre">
+         ROMANCE / COMING OF AGE
+        </span>
+        <span class="cover-author">
+         Maria
+        </span>
+       </button>
+       <button aria-label="Like The Chapter You Never Read" class="like-btn" data-like="127" type="button">
+        ♡
+       </button>
+      </div>
+      <div class="book-info">
+       <h3>
+        The Chapter You Never Read
+       </h3>
+       <p class="author">
+        by
+        <a href="https://www.inkitt.com/stories/1845238" rel="noopener noreferrer" target="_blank">
+         Maria
+        </a>
+       </p>
+       <span class="genre-pill">
+        Romance / Coming of Age &middot; 13+
+       </span>
+       <div class="card-bottom">
+        <button class="read-link" data-read="127" type="button">
+         Read Preview &nearrow;
+        </button>
+        <span class="muted">
+         Preview
+        </span>
+       </div>
+      </div>
+     </article>
+     <article class="book-card" data-age="16+" data-author="Ana&iuml;s Garnier - Cloclovilla" data-author-url="https://www.inkitt.com/stories/1445736" data-chapter="Chapter 1: Adopting a Biker" data-content="Alstria had a rule about strangers: keep walking, keep your headphones on, and never get involved. Then she saw a biker stranded beside the highway, rain soaking through his jacket while cars rushed past. She stopped before she could talk herself out of it. &ldquo;Need a hand?&rdquo; she called. The man looked up, surprised&mdash;and her carefully quiet life took a turn she never planned." data-emoji="🏍️" data-genre="Contemporary Romance / Friendship" data-id="128" data-story-url="https://www.inkitt.com/stories/1445736" data-synopsis="Alstria prefers quiet routines and keeping to herself. When she steps in to help a stranded biker on the highway, she discovers an unexpected circle of friends and the courage to live a little more freely." data-title="I Adopted a Biker">
+      <div class="cover-wrap">
+       <button aria-label="Open I Adopted a Biker" class="cover-art has-image" data-read="128" style="--cover1:#29333c;--cover2:#8e9a9c" type="button">
+        <img alt="Atmospheric cover art for I Adopted a Biker" class="real-cover-image" loading="lazy" src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&amp;fit=crop&amp;w=700&amp;q=85"/>
+        <span class="cover-title">
+         I Adopted a Biker
+        </span>
+        <span class="cover-genre">
+         CONTEMPORARY ROMANCE / FRIENDSHIP
+        </span>
+        <span class="cover-author">
+         Ana&iuml;s Garnier - Cloclovilla
+        </span>
+       </button>
+       <button aria-label="Like I Adopted a Biker" class="like-btn" data-like="128" type="button">
+        ♡
+       </button>
+      </div>
+      <div class="book-info">
+       <h3>
+        I Adopted a Biker
+       </h3>
+       <p class="author">
+        by
+        <a href="https://www.inkitt.com/stories/1445736" rel="noopener noreferrer" target="_blank">
+         Ana&iuml;s Garnier - Cloclovilla
+        </a>
+       </p>
+       <span class="genre-pill">
+        Contemporary Romance / Friendship &middot; 16+
+       </span>
+       <div class="card-bottom">
+        <button class="read-link" data-read="128" type="button">
+         Read Preview &nearrow;
+        </button>
+        <span class="muted">
+         Preview
+        </span>
+       </div>
+      </div>
+     </article>
+     <article class="book-card" data-age="13+" data-author="Joshua Gryph Simpson" data-author-url="https://www.inkitt.com/stories/205102" data-chapter="Chapter 1" data-content="It was a rainy Florida morning, and I was doing what I always did: checking social media instead of starting the work I had promised myself I would finish. Then an advertisement caught my eye. A writing website? I clicked. A few minutes later I had an account, a blank profile, and the strange feeling that I had just walked into a party where everyone already knew one another." data-emoji="😂" data-genre="Comedy / Adventure" data-id="129" data-story-url="https://www.inkitt.com/stories/205102" data-synopsis="A curious writer clicks into a new writing community and discovers a place full of unexpected stories, strange surprises, and plenty of reasons to laugh at the adventure of being a beginner." data-title="What A Joke">
+      <div class="cover-wrap">
+       <button aria-label="Open What A Joke" class="cover-art has-image" data-read="129" style="--cover1:#66513d;--cover2:#d7ad70" type="button">
+        <img alt="Atmospheric cover art for What A Joke" class="real-cover-image" loading="lazy" src="https://images.unsplash.com/photo-1527224857830-43a7acc85260?auto=format&amp;fit=crop&amp;w=700&amp;q=85"/>
+        <span class="cover-title">
+         What A Joke
+        </span>
+        <span class="cover-genre">
+         COMEDY / ADVENTURE
+        </span>
+        <span class="cover-author">
+         Joshua Gryph Simpson
+        </span>
+       </button>
+       <button aria-label="Like What A Joke" class="like-btn" data-like="129" type="button">
+        ♡
+       </button>
+      </div>
+      <div class="book-info">
+       <h3>
+        What A Joke
+       </h3>
+       <p class="author">
+        by
+        <a href="https://www.inkitt.com/stories/205102" rel="noopener noreferrer" target="_blank">
+         Joshua Gryph Simpson
+        </a>
+       </p>
+       <span class="genre-pill">
+        Comedy / Adventure &middot; 13+
+       </span>
+       <div class="card-bottom">
+        <button class="read-link" data-read="129" type="button">
+         Read Preview &nearrow;
+        </button>
+        <span class="muted">
+         Preview
+        </span>
+       </div>
+      </div>
+     </article>
+     <article class="book-card" data-age="16+" data-author="Grace Estelle" data-author-url="https://www.inkitt.com/stories/278081" data-chapter="Chapter 1" data-content="Bills were the only topic at the Jefferson dinner table. Taylor listened quietly, twisting the edge of her napkin while her parents explained what the family could no longer afford. The letter from the Paris Ballet Company sat in her bag like a small, bright secret. She had worked for this chance since childhood. For the first time, she wondered whether a dream could survive a practical answer." data-emoji="🌿" data-genre="Adventure / Young Adult" data-id="130" data-story-url="https://www.inkitt.com/stories/278081" data-synopsis="Taylor&rsquo;s dream opportunity with a ballet company seems impossible when her family cannot afford the trip. Faced with a difficult choice, she must decide whether to accept the limits placed before her or find another path." data-title="The Adventure">
+      <div class="cover-wrap">
+       <button aria-label="Open The Adventure" class="cover-art has-image" data-read="130" style="--cover1:#385b49;--cover2:#9cbd95" type="button">
+        <img alt="Atmospheric cover art for The Adventure" class="real-cover-image" loading="lazy" src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&amp;fit=crop&amp;w=700&amp;q=85"/>
+        <span class="cover-title">
+         The Adventure
+        </span>
+        <span class="cover-genre">
+         ADVENTURE / YOUNG ADULT
+        </span>
+        <span class="cover-author">
+         Grace Estelle
+        </span>
+       </button>
+       <button aria-label="Like The Adventure" class="like-btn" data-like="130" type="button">
+        ♡
+       </button>
+      </div>
+      <div class="book-info">
+       <h3>
+        The Adventure
+       </h3>
+       <p class="author">
+        by
+        <a href="https://www.inkitt.com/stories/278081" rel="noopener noreferrer" target="_blank">
+         Grace Estelle
+        </a>
+       </p>
+       <span class="genre-pill">
+        Adventure / Young Adult &middot; 16+
+       </span>
+       <div class="card-bottom">
+        <button class="read-link" data-read="130" type="button">
+         Read Preview &nearrow;
+        </button>
+        <span class="muted">
+         Preview
+        </span>
+       </div>
+      </div>
+     </article>
+    </div>
+    <p class="empty-state" hidden="" id="emptyState">
+     No stories found. Try another search or genre.
+    </p>
+   </section>
+   <section class="quote-band">
+    <span>
+     &ldquo;
+    </span>
+    <p>
+     Books are doors. Stories are the keys.
+    </p>
+    <small>
+     YOUR NEXT ADVENTURE IS ONE CLICK AWAY
+    </small>
+   </section>
+   <section class="section container about-section" id="about">
+    <div class="section-heading">
+     <div>
+      <p class="eyebrow">
+       A LITTLE ABOUT THIS PLACE
+      </p>
+      <h2>
+       A home for little adventures
+      </h2>
+      <p class="muted">
+       Once Upon a Page is a digital storybook library for readers who love exploring different worlds, one chapter at a time.
+      </p>
+     </div>
+    </div>
+    <div class="feature-grid">
+     <article class="feature-card">
+      <span>
+       ♡
+      </span>
+      <h3>
+       Save your favorites
+      </h3>
+      <p>
+       Tap the heart on a book card to keep track of stories you love.
+      </p>
+     </article>
+     <article class="feature-card">
+      <span>
+       ☼
+      </span>
+      <h3>
+       Read your way
+      </h3>
+      <p>
+       Switch between light and dark themes for a comfortable reading mood.
+      </p>
+     </article>
+     <article class="feature-card">
+      <span>
+       &nearrow;
+      </span>
+      <h3>
+       Explore stories
+      </h3>
+      <p>
+       Search by title, filter by genre, and open any book to read its story details.
+      </p>
+     </article>
+    </div>
+   </section>
+  </main>
+  <footer class="site-footer">
+   <a class="brand" href="#home">
+    ✦ Once Upon a Page
+   </a>
+   <p>
+    Made for curious minds and open books.
+   </p>
+   <span>
+    &copy; 2026 Once Upon a Page
+   </span>
+  </footer>
+  <div class="modal-backdrop" hidden="" id="storyModal">
+   <section aria-labelledby="modalTitle" aria-modal="true" class="story-modal" role="dialog">
+    <button aria-label="Close story" class="modal-close" id="modalClose">
+     &times;
+    </button>
+    <p class="eyebrow" id="modalGenre">
+     STORY PREVIEW
+    </p>
+    <h2 id="modalTitle">
+     Story title
+    </h2>
+    <p class="modal-author" id="modalAuthor">
+    </p>
+    <p class="modal-synopsis" id="modalSynopsis">
+    </p>
+    <div class="reading-tools">
+     <button id="modalLike" type="button">
+      ♡ Like story
+     </button>
+     <span id="progressText">
+      Reading progress: 0%
+     </span>
+    </div>
+    <div class="progress-track">
+     <div id="progressBar">
+     </div>
+    </div>
+    <article class="reading-area" id="readingArea">
+     <h3 id="chapterTitle">
+     </h3>
+     <p id="chapterContent">
+     </p>
+    </article>
+    <div class="modal-end">
+     <p>
+      The End &mdash; for now
+     </p>
+     <a class="button button-light" href="https://www.inkitt.com" id="originalChapterLink" rel="noopener noreferrer" target="_blank">
+      Read full story on Inkitt &nearrow;
+     </a>
+     <button class="button" id="finishReading" type="button">
+      Back to the library
+     </button>
+    </div>
+   </section>
+  </div>
+ </body>
+</html>
